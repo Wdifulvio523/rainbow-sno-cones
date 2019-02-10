@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rainbow Sno-Cones</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+  <div class="header">
+    <div class="header-title">
+        <h1>Rainbow Sno-Cones</h1>
+    </div>
+          <nav class="nav-items">
+              <a class="" href="#">Home</a> 
+              <a class="" href="#about">About</a> 
+              <a class="" href="#menu">Flavors</a> 
+              <a class="" href="#catering">Catering</a> 
+              <a class="" href="#contact-hours">Hours</a> 
+              <a class="" href="#contact-hours">Contact</a> 
+            </nav>
+  </div> <!--Container Header-->
+
+
+  <div class="top-div">
+      <div class="cta"> <!--CTA-->
+        <div class="">
+          <h1>Rainbow Sno-Cones Shaved Ice + Soft Serve</h1>
+          <p> Family owned</p>
+          <p> New Oleans style snoballs with a Florida twist!</p>
+          </div>
+        </div>
+
+    <div class="carousel"><!--Carousel-->
+        <img src="assets/img2.jpg" alt="rainbow">
+        <img src="assets/img3.jpg" alt="rainbow">
+        <img src="assets/ucf.jpg" alt="rainbow">
+        <img src="assets/about-img.jpg" alt="rainbow">
+    
+    </div> <!--Carousel-->
+  </div>
+
+
+
+          <div  id="about">
+            <h3>About Us</h3>
+            <p>This is going to be where the About us section of the page will go. 
+                We're going to write a few sentences to show why Rainbow Sno-Cones is where they want to be!
+              </p>
+                </div>
+                    <div id="menu">
+             
+                        <h3>Check out our flavors!</h3>
+                        <p>This is where the flavors will go. We can either list them like a regular list, 
+                            or we can have it more as a table that they can search through, or as cards like below (my suggestion) </p>
+                            <div class="flavor-cards">
+                                <div class='flavor cherry'>Cherry</div>
+                                <div class='flavor orange'>Orange</div>
+                                <div class='flavor watermelon'>Watermelon</div>
+                                <div class='flavor grape'>Grape</div>
+                                <div class='flavor blueberry'>Blueberry</div>
+                                <div class='flavor apple'>Sour Apple</div>
+                            </div> <!--flavor-cards-->
+                        </div> <!--menu-->
+                  
+                    <div id="catering">
+                    <h3>Catering</h3>
+                            <p>Snow-To-Go Party Pacs - Great for parties, picnics, sporting events, tailgating, or just a get-together!</p>
+                            <ul>What you get:
+                                <li>Large Cooler full of snow</li>
+                                <li>3  Bottles of Flavors</li>
+                                <li>Cups and Spoons</li>
+                                <li>Large or Small</li>
+                                <li>Snow only also available - Great for a snowball fight or to teach about snow!</li>
+                            </ul>
+                            <p>If you want shaved ice at your next event, give us a call!</p>
+                        </div>
+                     
+                            <div id="contact-hours"> <!-- contact-hours-->
+                        <div class="contact">
+                            <h4>Need a lot of Sno-Cones? Contact us!</h4>
+                            <p>3724 Howell Branch Rd<br>
+                                Winter Park, FL 32792</p>
+                            <p>1 (407) 896-9105</p>
+                            <p>EMAIL ADDRESS?????</p>
+                        </div>
+                        <div class="hours">
+                            <h4>Hours</h4>
+                            <p>Sunday: 12:00pm - 6:00pm </p>
+                            <p>Monday: 2:00pm - 6:00pm</p>
+                            <p>Tuesday: 2:00pm - 8:00pm</p>
+                            <p>Wednesday: 2:00pm - 8:00pm</p>
+                            <p>Thursday: 2:00pm - 8:00pm</p>
+                            <p>Friday: 2:00pm - 8:00pm</p>
+                            <p>Saturday: 12:00pm - 8:00pm</p>
+                        </div>
+                      </div><!-- contact-hours-->
+
+                      <div class="footer"> <!-- footer-->
+                            <p>Rainbow Sno-Cones Est 1989</p>   
+                        </div> <!-- footer-->
+</div> <!-- Main container -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+  infinite: true,
+  autoplay: true,
+  arrows:false,
+  autoplaySpeed: 3000,
+  fade: true,
+  cssEase: 'linear',
+  slidesToShow: 1,
+      });
+    });
+  </script>
+</body>
+</html>
