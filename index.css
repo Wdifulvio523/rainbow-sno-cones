@@ -48,7 +48,13 @@ table {
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%
+    font-size: 62.5%;
+    font-family: 'Kanit', sans-serif;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 body {
     margin: 0 auto;
@@ -65,10 +71,11 @@ img {
     height: 100%;
     min-height: 1300px;
     position: absolute;
-    color:white;
+    border-top:1px solid black;
+
     left:0;
     right: 0;
-    top: 0;
+    top: 185px;
     bottom: 0;
   background: linear-gradient(124deg, #1ddde8, #1ddde8, #e4ffde, #ffd3fd, #ea9df9, #1ddde8);
   background-size: 1800% 1800%;
@@ -103,67 +110,127 @@ img {
 
   .header {
     display:flex;
-    border-bottom:1px solid black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: dodgerblue;
-    margin-bottom: 20px;
 }
 
 .header-title {
     display: flex;
     justify-content: center;
     color:black;
-    font-size: 2.4rem;
+    font-size: 4.4rem;
+    font-weight:bold;
+    text-align: center;
+    width:100%;
+    letter-spacing: 2px;
+}
+.rainbow {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 70px;
+  height: 70px;
+  box-shadow: 0 0 0 10px #ff0000, 0 0 0 20px #ff7700, 0 0 0 30px #FFDD00, 0 0 0 40px #00FF00, 0 0 0 50px #0000FF, 0 0 0 60px #C77DF3, 0 0 0 70px #8A2BE2;
+  border-radius: 40px;
+  transform: rotate(-90deg);
+  position: relative;
+
+}
+.rainbow:before {
+  content: '';
+  width: 188%;
+  height: 334%;
+  background-color: dodgerblue;
+  position: absolute;
+  left: -119%;
+  top: -116%;
+}
+.header-rainbow {
+    width:100%;
+    text-align: center;
+    z-index: 1;
+    position:absolute;
+    top:20px;
+    left:12px;
+
+}
+.header-sno-cones {
+    width:100%;
+    text-align: center;
+    z-index: 1;
+    position:absolute;
+    top:60px;
+    left:10px; 
 }
 .nav-items {
     display:flex;
     justify-content: space-around;
     width: 50%;
+    z-index: 1;
+    padding-bottom: 20px;
 }
 
 .top-div {
     display: flex;
     width: 75%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
+    margin: 20px auto;
+    z-index: 1;
+    align-items: center;
 }
 
 .cta {
     margin: 0 auto;
     width: 35%;
-    background-color: 	rgb(59,68,75);
+    height:100%;
+    background-color: 	#bcf1ec;
     border-radius: 10px;
     padding: 15px;
+    z-index: 1;
+    line-height: 30px;
+    border: 1px solid black;
+
+}
+
+.cta h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
 }
 
 .carousel {
     width: 60%;
     margin: 0 auto;
-
 }
 
 #about {
-    border: 1px solid purple;
+    border: 1px solid black;
     width:75%;
     margin:0 auto;
     margin-bottom: 20px;
-    background-color: 	rgb(59,68,75);
+    background-color: #bcf1ec;
     border-radius: 10px;
     padding: 15px;
 }
+
+#about h3 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
 #menu {
-    border: 1px solid red;
+    border: 1px solid black;
     margin-bottom: 20px;
     width:75%;
     margin:0 auto;
     margin-bottom: 20px;
-    background-color: 	rgb(59,68,75);
+    background-color: #bcf1ec;
     border-radius: 10px;
     padding: 15px;
 
+}
+
+#menu h3 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
 }
 
 .flavor-cards {
@@ -171,7 +238,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     width:100%;
-    background-color: 	rgb(59,68,75);
+    background-color: 	#bcf1ec;
     margin-bottom: 20px;
 
 }
@@ -186,6 +253,11 @@ img {
     justify-content: center;
     color:white;
     font-weight: bold;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .cherry {
@@ -213,19 +285,27 @@ img {
 
 #catering {
     display:flex;
-    border: 1px solid green;
+    border: 1px solid black;
     width:75%;
     margin:0 auto;
     margin-bottom: 20px;
-    background-color: 	rgb(59,68,75);
+    background-color: #bcf1ec;
     border-radius: 10px;
     padding: 15px;
+    flex-direction: column;
+}
 
+#catering h3 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+
+#catering div {
+    display: flex;
 }
 
 #contact-hours {
     display: flex;
-    border: 1px solid blue;
     width:75%;
     margin:0 auto;
     justify-content: space-evenly;
@@ -236,8 +316,8 @@ img {
 .contact {
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
-    background-color: 	rgb(59,68,75);
+    border: 1px solid black;
+    background-color: 	#bcf1ec;
     border-radius: 10px;
     padding: 15px;
 
@@ -245,9 +325,9 @@ img {
 .hours {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    border: 1px solid black;
     justify-content: flex-start;
-    background-color: 	rgb(59,68,75);
+    background-color: 	#bcf1ec;
     border-radius: 10px;
     padding: 15px;
 }
