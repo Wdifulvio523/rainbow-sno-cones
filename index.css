@@ -50,11 +50,7 @@ html {
     scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: 'Kanit', sans-serif;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
+  
 }
 body {
     margin: 0 auto;
@@ -75,7 +71,7 @@ img {
 
     left:0;
     right: 0;
-    top: 185px;
+    top: 160px;
     bottom: 0;
   background: linear-gradient(124deg, #1ddde8, #1ddde8, #e4ffde, #ffd3fd, #ea9df9, #1ddde8);
   background-size: 1800% 1800%;
@@ -153,6 +149,11 @@ img {
     position:absolute;
     top:20px;
     left:12px;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 
 }
 .header-sno-cones {
@@ -162,6 +163,11 @@ img {
     position:absolute;
     top:60px;
     left:10px; 
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 .nav-items {
     display:flex;
@@ -169,6 +175,21 @@ img {
     width: 50%;
     z-index: 1;
     padding-bottom: 20px;
+    position: absolute;
+    top:130px;
+}
+.nav-items a {
+    text-decoration: none;
+    font-size: 2.2rem;
+}
+.nav-items a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+    color:black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 
 .top-div {
