@@ -1,140 +1,251 @@
 /* RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Reset */
 
-
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-    font-family: 'Kanit', sans-serif;
-  
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Kanit", sans-serif;
 }
 body {
-    margin: 0 auto;
-    font-size: 1.6rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
 }
 
-img {  
-    max-width: 100%;
-    max-height: 400px;
-    object-fit:scale-down;
+img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: scale-down;
 }
 .container {
-    width: 100%;
-    height: 100%;
-    min-height: 1300px;
-    position: absolute;
-    border-top:1px solid black;
+  width: 100%;
+  height: 100%;
+  min-height: 2300px;
+  position: absolute;
+  border-top: 1px solid black;
 
-    left:0;
-    right: 0;
-    top: 160px;
-    bottom: 0;
-  background: linear-gradient(124deg, #1ddde8, #1ddde8, #e4ffde, #ffd3fd, #ea9df9, #1ddde8);
+  left: 0;
+  right: 0;
+  top: 160px;
+  bottom: 0;
+  background: linear-gradient(
+    124deg,
+    #1ddde8,
+    #1ddde8,
+    #e4ffde,
+    #ffd3fd,
+    #ea9df9,
+    #1ddde8
+  );
   background-size: 1800% 1800%;
-  
+
   -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
   -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
-  
-  @-webkit-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-moz-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-o-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @keyframes rainbow { 
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
+  animation: rainbow 18s ease infinite;
+}
 
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
 
-
-  .header {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: dodgerblue;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: dodgerblue;
 }
 
 .header-title {
-    display: flex;
-    justify-content: center;
-    color:black;
-    font-size: 4.4rem;
-    font-weight:bold;
-    text-align: center;
-    width:100%;
-    letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 4.4rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
 }
 .rainbow {
-    margin: 0 auto;
-    margin-top: 90px;
-    width: 70px;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 70px;
   height: 70px;
-  box-shadow: 0 0 0 10px #ff0000, 0 0 0 20px #ff7700, 0 0 0 30px #FFDD00, 0 0 0 40px #00FF00, 0 0 0 50px #0000FF, 0 0 0 60px #C77DF3, 0 0 0 70px #8A2BE2;
+  box-shadow: 0 0 0 10px #ff0000, 0 0 0 20px #ff7700, 0 0 0 30px #ffdd00,
+    0 0 0 40px #00ff00, 0 0 0 50px #0000ff, 0 0 0 60px #c77df3,
+    0 0 0 70px #8a2be2;
   border-radius: 40px;
   transform: rotate(-90deg);
   position: relative;
-
 }
 .rainbow:before {
-  content: '';
+  content: "";
   width: 188%;
   height: 334%;
   background-color: dodgerblue;
@@ -143,217 +254,557 @@ img {
   top: -116%;
 }
 .header-rainbow {
-    width:100%;
-    text-align: center;
-    z-index: 1;
-    position:absolute;
-    top:20px;
-    left:12px;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
-
 }
 .header-sno-cones {
-    width:100%;
-    text-align: center;
-    z-index: 1;
-    position:absolute;
-    top:60px;
-    left:10px; 
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
 .nav-items {
-    display:flex;
-    justify-content: space-around;
-    width: 50%;
-    z-index: 1;
-    padding-bottom: 20px;
-    position: absolute;
-    top:130px;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  z-index: 1;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 130px;
 }
 .nav-items a {
-    text-decoration: none;
-    font-size: 2.2rem;
+  text-decoration: none;
+  font-size: 2.2rem;
 }
-.nav-items a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
-    color:black;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
+.nav-items a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
 
 .top-div {
-    display: flex;
-    width: 75%;
-    margin: 20px auto;
-    z-index: 1;
-    align-items: center;
+  display: flex;
+  width: 75%;
+  margin: 20px auto;
+  z-index: 1;
+  align-items: center;
 }
 
 .cta {
-    margin: 0 auto;
-    width: 35%;
-    height:100%;
-    background-color: 	#bcf1ec;
-    border-radius: 10px;
-    padding: 15px;
-    z-index: 1;
-    line-height: 30px;
-    border: 1px solid black;
-
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  background-color: #bcf1ec;
+  border-radius: 10px;
+  padding: 45px 15px;
+  z-index: 1;
+  line-height: 30px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cta h2 {
-    font-size: 3.2rem;
-    font-weight: 600;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cta h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 90px;
 }
 
 .carousel {
-    width: 60%;
-    margin: 0 auto;
+  width: 35%;
+  margin: 0 auto;
 }
 
 #about {
-    border: 1px solid black;
-    width:75%;
-    margin:0 auto;
-    margin-bottom: 20px;
-    background-color: #bcf1ec;
-    border-radius: 10px;
-    padding: 15px;
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #bcf1ec;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.about-info {
+  width: 50%;
+  margin-right: 3%;
 }
 
 #about h3 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  margin-bottom: 15px;
+  line-height: 20px;
 }
 #menu {
-    border: 1px solid black;
-    margin-bottom: 20px;
-    width:75%;
-    margin:0 auto;
-    margin-bottom: 20px;
-    background-color: #bcf1ec;
-    border-radius: 10px;
-    padding: 15px;
-
+  border: 1px solid black;
+  margin-bottom: 20px;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #bcf1ec;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 #menu h3 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
 }
 
 .flavor-cards {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width:100%;
-    background-color: 	#bcf1ec;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #bcf1ec;
+  margin: 20px 0;
+}
+.flavor-cards-sf {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-around;
+  background-color: #bcf1ec;
+  margin: 20px 0;
+}
+.flavor-cards-specialty {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  background-color: #bcf1ec;
+  margin: 20px 0;
+}
 
+.cream {
+  display: flex;
+  flex-direction: column;
+}
+.sugar-free {
+  display: flex;
+  flex-direction: column;
+}
+.specialty {
+  display: flex;
+  flex-direction: column;
 }
 .flavor {
-    border: 1px solid black;
-    width: 130px;
-    height: 30px;
-    border-radius: 5px;
-    text-align: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color:white;
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
+  border: 2px solid black;
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  padding: 1%;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
 }
 
 .cherry {
-    background-color: rgb(201, 35, 35);
+  background-color: rgb(201, 35, 35);
 }
 
 .orange {
-    background-color: rgb(255, 136, 0);
+  background-color: rgb(255, 136, 0);
 }
 .watermelon {
-    background-color: pink;
+  background-color: pink;
 }
 
 .grape {
-    background-color: rgb(163, 85, 163);
+  background-color: rgb(163, 85, 163);
 }
 
 .blueberry {
-    background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 
 .apple {
-    background-color: rgb(119, 199, 0);
+  background-color: rgb(119, 199, 0);
+}
+.Buttered-Beer {
+  background-color: rgb(255, 191, 0);
+}
+.Bahama-Mama {
+  background-color: rgb(98, 223, 206);
+}
+.Banana {
+  background-color: rgb(255, 225, 53);
+}
+.Birthday-Cake {
+  background-color: rgb(255, 180, 180);
+}
+.Black-Cherry {
+  background-color: rgb(153, 34, 68);
+}
+.Batman {
+  background-color: rgb(253, 227, 17);
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.Bubble-Gum {
+  background-color: rgb(255, 193, 204);
+}
+.Butterscotch {
+  background-color: rgb(198, 121, 65);
+}
+.Cherry-Limeade {
+  background-color: rgb(255, 183, 197);
+}
+.Coconut {
+  background-color: rgb(150, 90, 62);
+}
+.Cola {
+  background-color: rgb(65, 48, 34);
+}
+.Cotton-Candy {
+  background-color: rgb(255, 188, 217);
+}
+.Cream-Soda {
+  background-color: rgb(255, 253, 208);
+}
+.French-Vanilla {
+  background-color: rgb(209, 190, 168);
+}
+.Hurricane {
+  background-color: rgb(229, 0, 69);
+}
+.Lemon {
+  background-color: rgb(255, 247, 0);
+}
+.Lemon-Lime {
+  background-color: rgb(227, 255, 0);
+}
+.Mango {
+  background-color: rgb(255, 130, 67);
+}
+.Kiwango {
+  background-color: rgb(255, 130, 67);
+}
+.Passionfruit {
+  background-color: rgb(189, 51, 123);
+}
+.Peach {
+  background-color: rgb(255, 203, 164);
+}
+.Pink-Lemonade {
+  background-color: rgb(255, 158, 229);
+}
+.Pink-Lemon-Sour {
+  background-color: rgb(255, 20, 147);
+}
+.Pina-Colada {
+  background-color: rgb(249, 248, 214);
+}
+.Polar-Punch {
+  background-color: rgb(0, 206, 209);
+}
+.Raspberry {
+  background-color: rgb(227, 11, 93);
+}
+.Rootbeer {
+  background-color: rgb(63, 32, 6);
+}
+.Silver-Fox {
+  background-color: rgb(185, 178, 168);
+}
+.Rainbow {
+  background: pink; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    left,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* Standard syntax (must be last) */
+}
+.Spearmint {
+  background-color: rgb(152, 255, 152);
+}
+.Strawberry {
+  background-color: rgb(255, 67, 164);
+}
+.Strawberry-Cheesecake {
+  background-color: rgb(252, 90, 141);
+}
+.Tiger-Blood {
+  background-color: rgb(187, 10, 30);
+}
+.Tutti-Frutti {
+  background-color: rgb(201, 109, 147);
+}
+
+.Chocolate {
+  background-color: rgb(210, 105, 30);
+}
+.Cookies-N-Cream {
+  background-color: rgb(216, 173, 106);
+}
+.Coconut-Cream {
+  background-color: rgb(242, 229, 150);
+}
+.Dreamsicle {
+  background-color: rgb(247, 187, 103);
+}
+.Wedding-Cake {
+  background-color: rgb(244, 244, 225);
+}
+.Orange-Pineapple {
+  background-color: rgb(255, 179, 65);
+}
+.Tamarindo {
+  background-color: rgb(77, 27, 36);
+  margin-left: 15px;
 }
 
 #catering {
-    display:flex;
-    border: 1px solid black;
-    width:75%;
-    margin:0 auto;
-    margin-bottom: 20px;
-    background-color: #bcf1ec;
-    border-radius: 10px;
-    padding: 15px;
-    flex-direction: column;
+  display: flex;
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #bcf1ec;
+  border-radius: 10px;
+  padding: 15px;
+  flex-direction: column;
 }
 
 #catering h3 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
 }
 
-#catering div {
-    display: flex;
+.catering-div {
+  display: flex;
+}
+
+.tabs-items {
+  width: 100%;
+  height: 130px;
+  display: flex;
+}
+
+.tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs-item-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+.tabs-item-selected {
+  display: block;
+  height: auto;
+}
+
+.tabs-item-description {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  flex-direction: row;
+}
+
+.tabs-links {
+  display: flex;
+}
+
+.tabs-link {
+  height: 2.5rem;
+  padding: 1% 3%;
+  margin: 10px 5%;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tabs-link:hover {
+    background: pink; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(
+      left,
+      red,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet
+    ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(
+      right,
+      red,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet
+    ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(
+      right,
+      red,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet
+    ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(
+      to right,
+      red,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet
+    ); /* Standard syntax (must be last) */
+  }
+
+.tabs-link-selected {
+  z-index: 2;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+    letter-spacing: 1px;
+  background: pink; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    left,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to right,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ); /* Standard syntax (must be last) */
+  color: white;
+  border: 2px solid black;
 }
 
 #contact-hours {
-    display: flex;
-    width:75%;
-    margin:0 auto;
-    justify-content: space-evenly;
-    padding: 15px;
-
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  padding: 15px;
+  justify-content: space-between;
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    background-color: 	#bcf1ec;
-    border-radius: 10px;
-    padding: 15px;
-
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #bcf1ec;
+  border-radius: 10px;
+  padding: 15px;
+  width: 45%;
 }
 .hours {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    justify-content: flex-start;
-    background-color: 	#bcf1ec;
-    border-radius: 10px;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: flex-start;
+  background-color: #bcf1ec;
+  border-radius: 10px;
+  padding: 15px;
+  width: 45%;
 }
 .footer {
-    color:black;
-    display: flex;
-    justify-content: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  background: dodgerblue;
 }
