@@ -144,8 +144,6 @@ img {
 .container {
   width: 100%;
   height: 100%;
-  min-height: 2450px;
-  position: absolute;
   border-top: 1px solid black;
 
   left: 0;
@@ -231,35 +229,17 @@ img {
   text-align: center;
   width: 100%;
   letter-spacing: 2px;
+  margin-bottom: 15px;
 }
-.rainbow {
-  margin: 0 auto;
-  margin-top: 90px;
-  width: 70px;
-  height: 70px;
-  box-shadow: 0 0 0 10px #ff0000, 0 0 0 20px #ff7700, 0 0 0 30px #ffdd00,
-    0 0 0 40px #00ff00, 0 0 0 50px #0000ff, 0 0 0 60px #c77df3,
-    0 0 0 70px #8a2be2;
-  border-radius: 40px;
-  transform: rotate(-90deg);
-  position: relative;
-}
-.rainbow:before {
-  content: "";
-  width: 188%;
-  height: 334%;
-  background-color: dodgerblue;
-  position: absolute;
-  left: -119%;
-  top: -116%;
-}
+
 .header-rainbow {
   width: 90%;
   text-align: center;
   z-index: 1;
   position: absolute;
   top: 20px;
-  left: 60px;
+  letter-spacing: 2px;
+  left: 5%;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
@@ -268,20 +248,20 @@ img {
   text-align: center;
   z-index: 1;
   position: absolute;
+  letter-spacing: 2px;
   top: 60px;
-  left: 60px;
+  left: 5%;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
 .nav-items {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
-  z-index: 1;
+  justify-content: space-evenly;
+  width: 100%;
   padding-bottom: 20px;
-  position: absolute;
-  top: 130px;
 }
+
+
 .nav-items a {
   text-decoration: none;
   font-size: 2.2rem;
@@ -304,6 +284,8 @@ a:focus {
   z-index: 1;
   align-items: center;
 }
+
+
 
 .cta {
   margin: 0 auto;
@@ -331,7 +313,12 @@ a:focus {
   font-size: 2.8rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  
+  margin-bottom: 20px;
 }
 
 .carousel {
@@ -660,7 +647,6 @@ a:focus {
 
 .tabs-items {
   width: 100%;
-  height: 130px;
   display: flex;
   justify-content: center;
 }
@@ -677,8 +663,9 @@ a:focus {
 }
 
 .tabs-item-selected {
-  display: block;
+  display: flex;
   height: auto;
+  justify-content: space-evenly;
 }
 
 .tabs-item-description {
@@ -693,6 +680,7 @@ p {
 .tabs-links {
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .tabs-link {
@@ -802,11 +790,13 @@ p {
   margin: 0 auto;
   padding: 15px;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   border: 1px solid black;
   background-color: #bcf1ec;
   border-radius: 10px;
@@ -840,4 +830,89 @@ p {
   justify-content: center;
   background: dodgerblue;
   height:30px;
+  border-top: 1px solid black;
+}
+
+.footer p {
+  margin-top: 10px;
+}
+
+@media(max-width: 600px) {
+  .nav-items {
+    flex-wrap: wrap;
+  }
+
+  .top-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .carousel {
+    width: 80%;
+  }
+
+  .cream p {
+    text-align: center;
+  }
+  .sugar-free {
+    align-items: center;
+  }
+  .specialty {
+    align-items: center;
+  }
+
+  .sugar-free p {
+    text-align: center;
+  }
+
+  .specialty p {
+  margin:0;
+  }
+
+  .flavor-cards-specialty {
+  justify-content: center;
+  }
+
+  .Tamarindo {
+    margin-left: 0;
+  }
+
+  .tabs-link {
+    height: auto;
+  }
+
+  .tabs-item-selected {
+    flex-direction: column;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  #about img {
+    margin-bottom: 15px;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  #contact-hours {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .contact {
+    width: 75%;
+    margin-bottom: 15px;
+  }
+  .hours {
+    width: 75%;
+  }
 }
